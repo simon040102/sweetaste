@@ -84,7 +84,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .topbar .logo img {
@@ -106,6 +107,8 @@ a {
   font-weight: 700;
   text-decoration: none;
   padding-bottom: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .topbar ul li a:hover {
@@ -623,6 +626,8 @@ img {
 
 .product-content .menu li a {
   display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .product-content .menu li a:hover {
@@ -696,9 +701,15 @@ img {
   line-height: 65px;
 }
 
+.items .center a {
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .items .center a:hover {
-  color: #27352a;
-  text-decoration: underline;
+  color: #EAF0ED;
+  background-color: #3f5d45c9;
 }
 
 .page ul {

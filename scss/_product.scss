@@ -40,7 +40,7 @@
 .product-content .menu li {
   a {
     display: block;
-
+    transition: 0.3s;
     &:hover {
       color: #EAF0ED;
       background: #3F5D45;
@@ -110,10 +110,14 @@
       text-align: center;
       line-height: 65px;
     }
-
+    a{
+      display: block;
+      transition: 0.3s;
+    }
     a:hover {
-      color: #27352a;
-      text-decoration: underline;
+      color:#EAF0ED;
+      background-color: #3f5d45c9;
+     
     }
   }
 }
