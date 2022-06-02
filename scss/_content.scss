@@ -10,21 +10,47 @@ a {
     display: block;
   }
 }
+
 .container {
   max-width: 940px;
   margin: 0 auto;
 }
+
 .topbar {
   display: flex;
   align-self: center;
   justify-content: space-between;
   margin-bottom: 10px;
   margin-top: 20px;
-
+  position: relative;
+  .mobile-meun-items{
+    display: none;
+  }
   .logo img {
     height: 40px;
   }
-
+  .mobile-logo{
+    display: none;
+  }
+  .mobile-meun{
+    text-decoration: none;
+    border-radius: 5px;
+    color: #3f5d45;
+    width: 40px;
+    display: none ;
+    display: flex;
+    align-self: center;
+  }
+  .menu{
+    display: flex;
+    .shop-car{
+      img{
+      width: 24px ;
+      margin-top: 10px;
+      margin-left: 60px;
+      }
+    }
+  }
   ul {
     display: flex;
 
@@ -35,7 +61,7 @@ a {
       a {
         font-weight: 700;
         text-decoration: none;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
         transition: 0.3s;
         &:hover {
           border-bottom: 3px solid #3f5d45;
@@ -46,6 +72,78 @@ a {
         margin-top: 10px;
       }
     }
+  }
+}
+@include pad {
+  .desktop-logo{
+    display: none;
+  }
+   .mobile-logo{
+    display:block !important;
+    margin-top: 8px;
+  }
+  .mobile-meun{
+    display: block !important;
+  }
+  .logo{
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu{
+    ul{
+      display: none !important;
+    }
+  }
+  .topbar{
+    justify-content: space-between !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    .shop-car{
+    img{
+      margin-left: 0px !important;
+      width: 40px !important;
+      margin-bottom: 15px;
+    }
+    }
+  }
+   .active{
+      display: block !important;
+     
+    }
+  .mobile-meun-items{
+    position: absolute;
+    left: 0;
+    bottom: -160px;
+    width: 100%;
+    background-color:rgba(63, 93, 69, 0.8) ;
+    border-bottom: #eaf0ed solid 2px;
+    font-size: 30px;
+    text-align: center;
+     transition: 1s;
+    a{
+      color: #eaf0ed !important;
+      padding-bottom: 0px !important;
+      display: block;
+      &:hover{
+        color:#3f5d45 !important;
+        background-color: #eaf0ed;
+        
+      }
+    }
+    ul{
+      display: block !important;
+      li{
+        margin-left: 0px !important;
+        height: 50px;
+      }
+    }
+  }
+}
+@include pad{
+  .mail{
+    display: block !important; 
+    height: 186px !important
+    
   }
 }
 .footer {
