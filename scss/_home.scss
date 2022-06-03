@@ -242,9 +242,14 @@ img {
       line-height: 65px;
     }
 
-    a:hover {
-      color: #27352a;
-      text-decoration: underline;
+    a{
+      display: block;
+      transition: 0.3s;
+      &:hover {
+      color:#EAF0ED;
+      background-color: #3f5d45c9;
+     
+    }
     }
   }
 }
