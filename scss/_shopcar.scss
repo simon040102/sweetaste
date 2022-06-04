@@ -22,8 +22,8 @@
         height: 110px;
         object-fit: cover;
       }
-      h4{
-          color: #3F5D45;
+      h4 {
+        color: #3f5d45;
       }
       display: flex;
       height: 150px;
@@ -36,8 +36,8 @@
     }
   }
 }
-.items-count{
-    display: flex;
+.items-count {
+  display: flex;
 }
 .delete-img {
   width: 24px;
@@ -71,10 +71,9 @@
   height: 258px;
   margin-left: 3%;
   background-color: #3f5d45;
- 
 }
 .shopcar-orderlist {
-     padding-left: 16px;
+  padding-left: 16px;
   padding-right: 16px;
   h2 {
     margin-top: 16px;
@@ -93,76 +92,86 @@
   color: #eaf0ed;
   font-weight: 300;
   margin-bottom: 8px;
-  h4{
-      margin-top: 8px;
-      margin-bottom: 16px;
-      font-weight: bold;
+  h4 {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-weight: bold;
   }
 }
 .checkout {
   width: 100%;
   font-size: 24px;
   text-align: center;
-  color: #3f5d45;
-  background-color: #FFE180;
+  background-color: #ffe180;
   height: 65px;
   line-height: 65px;
   margin-top: 32px;
+  transition: 0.3s;
+  a {
+    color: #3f5d45;
+   
   }
+   &:hover{
+      background-color:#eaf0ed;
+      
+      
+  }
+}
 
-  @include pad{
-      .shopcar-content{
-          display: block;
-          margin: 0 auto;
-      }
-      .shopcar-count{
-          display: block;
-      }
-      .items-count{
-          margin-bottom: 5px;
-      }
-      .shopcar-items{
-          width: 100%;
-          ul{
-              li{
-                 display: block;
-                  padding-left: 30px;
-                  padding-right: 30px;
-                  border-bottom: none;
-                  h4{
-                      font-size: 20px;
-                      text-align: end;
-                      height: 28px;
-                      line-height: 28px;
-                      border-top: #eaf0ed 1px solid;
-                      border-bottom: #eaf0ed 1px solid;
-                  }
-              }
-          }
-      }
-      .shopcar-order{
-          width: 100%;
-          margin-left: 0;
-          background-color: white;
-      }
-      .delete-img{
-          display: none;
-      }
-      .shopcar-orderlist{
-          background-color: #FFFF;
-          h2{
-              margin-top: 30px;
-              background-color: #eaf0ed;
-              color: #3F5D45;
-              padding: 0;
-              height: 65px;
-              line-height: 65px;
-          }
-      }
-      .shopcar-total,.checkout{
-          color: #3f5d45;
-      }
-      .checkout{
-          margin-top: 0px;
-      }
+@include pad {
+  .shopcar-content {
+    display: block;
+    margin: 0 auto;
   }
+  .shopcar-count {
+    display: block;
+  }
+  .items-count {
+    margin-bottom: 5px;
+  }
+  .shopcar-items {
+    width: 100%;
+    ul {
+      li {
+        display: block;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-bottom: none;
+        h4 {
+          font-size: 20px;
+          text-align: end;
+          height: 28px;
+          line-height: 28px;
+          border-top: #eaf0ed 1px solid;
+          border-bottom: #eaf0ed 1px solid;
+        }
+      }
+    }
+  }
+  .shopcar-order {
+    width: 100%;
+    margin-left: 0;
+    background-color: white;
+  }
+  .delete-img {
+    display: none;
+  }
+  .shopcar-orderlist {
+    background-color: #ffff;
+    h2 {
+      margin-top: 30px;
+      background-color: #eaf0ed;
+      color: #3f5d45;
+      padding: 0;
+      height: 65px;
+      line-height: 65px;
+    }
+  }
+  .shopcar-total,
+  .checkout {
+    color: #3f5d45;
+  }
+  .checkout {
+    margin-top: 0px;
+  }
+}
