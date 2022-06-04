@@ -819,19 +819,19 @@ a {
         justify-content: space-around;
   }
   .menu ul {
-    display: none !important;
+    display: none;
   }
   .topbar {
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
   }
   .topbar .shop-car img {
     margin-left: 0px !important;
-    width: 40px !important;
-    margin-bottom: 15px;
+    width: 40px;
+    margin-top: 20px !important;
   }
   .active {
     display: block !important;

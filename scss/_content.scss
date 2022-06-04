@@ -90,18 +90,18 @@ a {
   }
   .menu {
     ul {
-      display: none !important;
+      display: none ;
     }
   }
   .topbar {
-    justify-content: space-between !important;
+    justify-content: space-between ;
     padding-left: 20px;
     padding-right: 20px;
     .shop-car {
       img {
         margin-left: 0px !important;
-        width: 40px !important;
-        margin-bottom: 15px;
+        width: 40px ;
+        margin-top: 20px !important;
       }
     }
   }
