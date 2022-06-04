@@ -79,7 +79,7 @@ a {
   }
   .mobile-logo {
     display: block;
-    margin-top: 8px;
+    width: 200px;
   }
   .mobile-menu {
     display: block !important;
@@ -279,7 +279,7 @@ a {
     margin: 0 auto;
   }
   .mail-text{
-    width: 380px;
+    max-width: 375px;
     justify-content: space-around;
   }
   .slogan{
