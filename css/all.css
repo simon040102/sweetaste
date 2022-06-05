@@ -771,11 +771,11 @@ a {
   display: flex;
 }
 
-.topbar .shop-car {
+.topbar .menu .shop-car {
   margin-top: 10px;
 }
 
-.topbar .shop-car img {
+.topbar .menu .shop-car img {
   width: 24px;
   margin-left: 60px;
 }
@@ -834,9 +834,6 @@ a {
             justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
-  }
-  .topbar .shop-car {
-    margin-top: 0px;
   }
   .topbar .shop-car img {
     margin-left: 0px !important;
@@ -898,25 +895,19 @@ a {
   width: 40px;
 }
 
-.mail .input {
-  position: relative;
-  width: 380px;
-}
-
-.mail .input input {
-  width: 380px;
-  height: 52px;
-  font-size: 20px;
-  text-indent: 50px;
-}
-
 .mail .mail-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.mail .input-img {
+.mail .mail-img {
+  position: absolute;
+  left: 4px;
+  bottom: 5px;
+}
+
+.input-img {
   position: absolute;
   left: 315px;
   bottom: 1px;
@@ -926,7 +917,7 @@ a {
   background-color: #ffe180;
 }
 
-.mail .input-img a {
+.input-img a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -936,10 +927,16 @@ a {
   padding: 5px;
 }
 
-.mail .mail-img {
-  position: absolute;
-  left: 4px;
-  bottom: 5px;
+.input {
+  position: relative;
+  width: 380px;
+}
+
+.input input {
+  width: 380px;
+  height: 52px;
+  font-size: 20px;
+  text-indent: 50px;
 }
 
 .inform {
@@ -1055,6 +1052,15 @@ a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .input {
+    width: 315px;
+  }
+  .input input {
+    width: 100%;
+  }
+  .input-img {
+    left: 251px;
+  }
   .slogan {
     display: none;
   }
@@ -1123,8 +1129,7 @@ a {
 }
 
 .login-input a:hover {
-  background-color: #8da291;
-  color: #ffe180;
+  background-color: #eaf0ed;
 }
 
 .login-input img {
@@ -1454,6 +1459,7 @@ a {
     width: 100%;
     margin-left: 0;
     background-color: white;
+    height: auto;
   }
   .delete-img {
     display: none;
@@ -1475,6 +1481,7 @@ a {
   }
   .checkout {
     margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 
@@ -1496,6 +1503,7 @@ a {
   height: 577px;
   background-color: #3f5d45;
   margin-bottom: 65px;
+  z-index: 5;
 }
 
 .transport-name {
@@ -1571,10 +1579,50 @@ a {
   margin-left: 20px;
 }
 
+.transport-delver {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .transport-delver h4 {
   font-size: 36px;
   color: #eaf0ed;
   margin-bottom: 30px;
+}
+
+.transport-delver ul {
+  margin-top: 10px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.transport-delver ul::before {
+  content: ' ';
+  height: 2px;
+  width: 97%;
+  background-color: #eaf0ed;
+  position: absolute;
+  top: 10;
+  z-index: 2;
+  margin-left: 2px;
+}
+
+.transport-delver ul li {
+  z-index: 3;
+}
+
+.transport-delver ul li img {
+  width: 24px;
 }
 
 .transport-next a {
@@ -1731,10 +1779,46 @@ a {
   width: 300px;
 }
 
+.finish-order img {
+  margin-top: 30px;
+}
+
+.finish-order ul {
+  margin-top: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.finish-order ul::before {
+  content: ' ';
+  height: 2px;
+  width: 97%;
+  background-color: #3f5d45;
+  position: absolute;
+  top: 10;
+  z-index: 2;
+  margin-left: 2px;
+}
+
+.finish-order ul li {
+  z-index: 3;
+}
+
+.finish-order ul li img {
+  width: 24px;
+  margin-top: 0px;
+}
+
 .finish-order {
   width: 300px;
   margin: 0 auto;
-  padding-top: 180px;
+  padding-top: 120px;
 }
 
 @media (max-width: 768px) {
@@ -1746,8 +1830,11 @@ a {
     background-position: -30 0;
   }
   .finish-order-continue a {
-    margin-top: 280px;
+    margin-top: 190px;
     width: 100%;
+  }
+  .finish-order {
+    padding-top: 200px;
   }
 }
 
@@ -1765,6 +1852,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 66px;
 }
 
@@ -1815,6 +1905,52 @@ a {
   width: 100%;
 }
 
+.PayInformation-delver {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.PayInformation-delver h4 {
+  font-size: 36px;
+  color: #eaf0ed;
+  margin-bottom: 30px;
+}
+
+.PayInformation-delver ul {
+  margin-top: 10px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.PayInformation-delver ul::before {
+  content: ' ';
+  height: 2px;
+  width: 97%;
+  background-color: #eaf0ed;
+  position: absolute;
+  top: 10;
+  z-index: 2;
+  margin-left: 2px;
+}
+
+.PayInformation-delver ul li {
+  z-index: 3;
+}
+
+.PayInformation-delver ul li img {
+  width: 24px;
+}
+
 .PayInformation-month {
   margin-right: 4px;
 }
@@ -1846,6 +1982,21 @@ a {
   color: #eaf0ed;
   font-size: 20px;
   margin-bottom: 8px;
+}
+
+.PayInformation-credit {
+  position: relative;
+}
+
+.PayInformation-credit input {
+  width: 100%;
+}
+
+.credit-img {
+  position: absolute;
+  width: 24px;
+  top: 44px;
+  right: 10px;
 }
 
 .PayInformation-orderList {
@@ -2009,25 +2160,56 @@ a {
 }
 
 .receipt-detail {
-  width: 460px;
+  width: 443px;
   height: 491px;
   background-color: #3f5d45;
   margin-bottom: 65px;
 }
 
-.PayInformation-credit {
+.receipt-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.receipt-title h4 {
+  font-size: 36px;
+  color: #eaf0ed;
+  margin-bottom: 30px;
+}
+
+.receipt-title ul {
+  margin-top: 10px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
 }
 
-.PayInformation-credit input {
-  width: 100%;
+.receipt-title ul::before {
+  content: ' ';
+  height: 2px;
+  width: 97%;
+  background-color: #eaf0ed;
+  position: absolute;
+  top: 10;
+  z-index: 2;
+  margin-left: 2px;
 }
 
-.credit-img {
-  position: absolute;
+.receipt-title ul li {
+  z-index: 3;
+}
+
+.receipt-title ul li img {
   width: 24px;
-  top: 44px;
-  right: 16px;
 }
 
 .receipt-orderList {
@@ -2039,6 +2221,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 44px;
 }
 
@@ -2189,6 +2374,9 @@ a {
   .receipt-detail {
     width: 100%;
     margin-bottom: 0px;
+  }
+  .receipt-type a {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=all.css.map */

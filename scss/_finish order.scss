@@ -24,9 +24,39 @@
   }
 }
 .finish-order {
+  img{
+    margin-top: 30px;
+  }
+  ul{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+     &::before{
+    content: ' ';
+    height: 2px;
+    width: 97%;
+    background-color: #3f5d45;
+    position: absolute;
+    top: 10;
+    z-index: 2;
+    margin-left: 2px;
+    }
+    li{
+       z-index: 3;
+      img{
+        width: 24px;
+        margin-top: 0px;
+      }
+  }
+  }
+
+}
+.finish-order {
   width: 300px;
   margin: 0 auto;
-  padding-top: 180px;
+  padding-top: 120px;
 }
 @include pad {
   .finish-order-bg {
@@ -38,10 +68,13 @@
   }
   .finish-order-continue {
       a{
-          margin-top: 280px;
+          margin-top: 190px;
           width: 100%;
       }
   }
+  .finish-order {
+  padding-top: 200px;
+}
 }
 @include mobile {
   .finish-order-bg {

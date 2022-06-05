@@ -42,14 +42,14 @@ a {
   }
   .menu {
     display: flex;
-  }
-  .shop-car {
+    .shop-car {
       margin-top: 10px;
       img {
         width: 24px;
         margin-left: 60px;
       }
     }
+  }
   ul {
     display: flex;
 
@@ -98,7 +98,6 @@ a {
     padding-left: 20px;
     padding-right: 20px;
     .shop-car {
-      margin-top: 0px;
       img {
         margin-left: 0px !important;
         width: 40px ;
@@ -149,23 +148,21 @@ a {
   img {
     width: 40px;
   }
-  .input {
-    position: relative;
-    width: 380px;
-    input {
-      width: 380px;
-      height: 52px;
-      font-size: 20px;
-      text-indent: 50px;
-    }
-  }
+  
   .mail-text {
     display: flex;
   }
   height: 116px;
   align-items: center;
   display: flex;
-  .input-img {
+  
+  .mail-img {
+    position: absolute;
+    left: 4px;
+    bottom: 5px;
+  }
+}
+.input-img {
     position: absolute;
     left: 315px;
     bottom: 1px;
@@ -179,12 +176,16 @@ a {
       padding: 5px;
     }
   }
-  .mail-img {
-    position: absolute;
-    left: 4px;
-    bottom: 5px;
+.input {
+    position: relative;
+    width: 380px;
+    input {
+      width: 380px;
+      height: 52px;
+      font-size: 20px;
+      text-indent: 50px;
+    }
   }
-}
 .inform {
   display: flex;
   height: 341px;
@@ -282,6 +283,15 @@ a {
   .mail-text{
     max-width: 375px;
     justify-content: space-around;
+  }
+  .input{
+    width: 315px;
+    input{
+      width: 100%;
+    }
+  }
+  .input-img{
+    left: 251px;
   }
   .slogan{
     display: none;

@@ -2,6 +2,7 @@
   padding-left: 10%;
   padding-right: 10%;
   display: flex;
+  justify-content: space-between;
   margin-top: 66px;
 }
 .PayInformation-content {
@@ -37,6 +38,40 @@
   }
 }
 
+.PayInformation-delver {
+   h4 {
+    font-size: 36px;
+    color: #eaf0ed;
+    margin-bottom: 30px;
+  }
+  display: flex;
+  justify-content: space-between;
+  ul{
+    margin-top: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+     &::before{
+    content: ' ';
+    height: 2px;
+    width: 97%;
+    background-color:#eaf0ed ;
+    position: absolute;
+    top: 10;
+    z-index: 2;
+    margin-left: 2px;
+    }
+    li{
+       z-index: 3;
+      img{
+        width: 24px;
+       
+      }
+  }
+  }
+
+}
 .PayInformation-month {
   margin-right: 4px;
 }
@@ -70,7 +105,18 @@
     margin-bottom: 8px;
   }
 }
-
+.PayInformation-credit{
+  position: relative;
+  input{
+    width: 100%;
+  }
+}
+.credit-img{
+position: absolute;
+width: 24px;
+top: 44px;
+right: 10px;
+}
 .PayInformation-orderList {
   width: 300px;
   margin-left: 20px;

@@ -19,22 +19,45 @@
   }
 }
 .receipt-detail {
-  width: 460px;
+  width: 443px;
   height: 491px;
   background-color: #3f5d45;
   margin-bottom: 65px;
 }
-.PayInformation-credit{
-  position: relative;
-  input{
-    width: 100%;
+
+.receipt-title {
+   h4 {
+    font-size: 36px;
+    color: #eaf0ed;
+    margin-bottom: 30px;
   }
-}
-.credit-img{
-position: absolute;
-width: 24px;
-top: 44px;
-right: 16px;
+  display: flex;
+  justify-content: space-between;
+  ul{
+    margin-top: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+     &::before{
+    content: ' ';
+    height: 2px;
+    width: 97%;
+    background-color:#eaf0ed ;
+    position: absolute;
+    top: 10;
+    z-index: 2;
+    margin-left: 2px;
+    }
+    li{
+       z-index: 3;
+      img{
+        width: 24px;
+       
+      }
+  }
+  }
+
 }
 
 .receipt-orderList {
@@ -43,6 +66,7 @@ right: 16px;
 }
 .receipt-type{
   display: flex;
+  justify-content: center;
   margin-bottom: 44px; 
   a{
     text-align: center;
@@ -172,5 +196,10 @@ right: 16px;
     .receipt-detail{
         width: 100%;
         margin-bottom: 0px;
+    }
+    .receipt-type{
+      a{
+        width: 50%;
+      }
     }
 }
