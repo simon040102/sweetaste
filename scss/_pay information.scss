@@ -1,53 +1,56 @@
-.transport {
+.PayInformation {
   padding-left: 10%;
   padding-right: 10%;
   display: flex;
   margin-top: 66px;
 }
-.transport-content {
+.PayInformation-content {
   padding: 30px 40px 0px 40px;
 }
-.transport-detail {
+.PayInformation-detail {
   width: 460px;
   height: 577px;
   background-color: #3f5d45;
   margin-bottom: 65px;
 }
-.transport-name {
-  display: flex;
-}
-.transport-address {
+
+.PayInformation-date {
   display: flex;
     select{
         text-indent: 10px;
         color: #8da291;
     }
 }
-.surname,
-.name,
-.transport-country,
-.transport-area,
-.address {
-  width: 100%;
+.credit-name{
+  display: flex;
+  justify-content: space-between;
+  input{
+    width: 49%;
+  }
+}
+.PayInformation-month,
+.PayInformation-year,
+.credit-password {
+  width: 50%;
   input {
     width: 100%;
   }
 }
-.surname,
-.transport-country {
+
+.PayInformation-month {
   margin-right: 4px;
 }
-.name,
-.transport-area {
+
+.PayInformation-year {
   margin-left: 4px;
 }
 
-.transport-phone {
+.PayInformation-phone {
   input {
     width: 100%;
   }
 }
-.transport-data {
+.PayInformation-data {
   input {
     height: 56px;
     background-color: #eaf0ed;
@@ -68,19 +71,19 @@
   }
 }
 
-.transport-orderList {
+.PayInformation-orderList {
   width: 300px;
   margin-left: 20px;
 }
 
-.transport-delver {
+.PayInformation-delver {
   h4 {
     font-size: 36px;
     color: #eaf0ed;
     margin-bottom: 30px;
   }
 }
-.transport-next {
+.PayInformation-next {
   a {
     color: #3f5d45;
     display: block;
@@ -88,7 +91,7 @@
     font-size: 24px;
     text-align: center;
     line-height: 65px;
-    margin-top: 45px;
+    margin-top: 17px;
     transition: 0.3s;
   a {
     color: #3f5d45;
@@ -100,7 +103,7 @@
   }
 }
 }
-.transport-countlist {
+.PayInformation-countlist {
   margin-bottom: 20px;
   border: #eaf0ed 2px solid;
   p {
@@ -118,7 +121,7 @@
     border-bottom: #eaf0ed 1px solid;
   }
 }
-.transport-count {
+.PayInformation-count {
   display: flex;
   justify-content: space-between;
   font-size: 16px;
@@ -134,7 +137,7 @@
     font-weight: bold;
   }
 }
-.transport-shoppingList{
+.PayInformation-shoppingList{
     border: #eaf0ed 2px solid;
     h2 {
     padding-top: 16px;
@@ -173,13 +176,13 @@
     }
 }
 @include pad{
-    .transport-orderlist{
+    .PayInformation-orderlist{
         display: none;
     }
-    .transport{
+    .PayInformation{
         padding: 0px;
     }
-    .transport-detail{
+    .PayInformation-detail{
         width: 100%;
         margin-bottom: 0px;
     }

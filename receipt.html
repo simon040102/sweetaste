@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sweetast訂單運送方式</title>
+    <title>Sweetast訂單發票</title>
     <link rel="stylesheet" href="css/all.css" />
   </head>
 
@@ -48,44 +48,33 @@
       <!-- topbar -->
 
 
-     <div class="transport">
-       <div class="transport-detail">
-         <div class="transport-content">
-         <div class="transport-delver">
-           <h4>運送</h4>
+     <div class="receipt">
+       <div class="receipt-detail">
+         <div class="receipt-content">
+         <div class="receipt-title">
+           <h4>發票</h4>
          </div>
-         <div class="transport-data">
-           <div class="transport-name">
-           <div class="surname"><h3>姓氏</h3><input type="text" placeholder="王"></div>
-           <div class="name"><h3>名字</h3><input type="text" placeholder="小明"></div>
-           </div>
-           <div class="transport-phone">
-             <h3>電話</h3><input type="phone" placeholder="0912-345-678">
-           </div>
-           <h3>地址</h3>
-           <div class="transport-address">
-             <select class="transport-country" name="country" id="">
-               <option value="高雄市">高雄市</option>
-             </select>
-             <select class="transport-area" name="area" id="">
-               <option value="新興區">新興區</option>
-             </select>
-           </div>
-           <input class="address" type="text" placeholder="幸褔路520號">
+         <div class="receipt-type">
+            <a href="#"><h3>電子發票</h3></a>
+            <a href="#"><h3>郵寄發票</h3></a>
          </div>
+         <p>電子郵件信箱</p>
+         <input type="mail" placeholder="example@email.com">
+         <p>統一編號(選填)</p>
+         <input type="text" placeholder="12345678">
          </div>
-         <div class="transport-next fw-d"><a href="pay information.html"><h4>下一步</h4></a></div>
+         <div class="receipt-next fw-d"><a href="finish order.html"><h4>確認結帳</h4></a></div>
        </div>
-       <div class="transport-orderlist">
-         <div class="transport-total">
-           <div class="transport-countlist">
+       <div class="receipt-orderlist">
+         <div class="receipt-total">
+           <div class="receipt-countlist">
            <h2 class="fw-d">訂單摘要</h2>
-           <div class="transport-count"><p>小計</p> <p>NT$ 2,700</p></div>
-           <div class="transport-count"><p>運費</p> <p>NT$ 300</p></div>
-           <div class="transport-count"><h4>總計</h4> <h4>NT$ 3,000</h4></div>
+           <div class="receipt-count"><p>小計</p> <p>NT$ 2,700</p></div>
+           <div class="receipt-count"><p>運費</p> <p>NT$ 300</p></div>
+           <div class="receipt-count"><h4>總計</h4> <h4>NT$ 3,000</h4></div>
           </div>
          </div>
-         <div class="transport-shoppingList">
+         <div class="receipt-shoppingList">
            <h2>購物清單</h2>
            <ul>
              <li>

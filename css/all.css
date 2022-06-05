@@ -80,6 +80,8 @@ img {
   z-index: -10;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .introduce {
@@ -387,8 +389,10 @@ img {
     display: none;
   }
   .home-banner {
-    background-position: 0px -130px;
+    width: 100%;
     height: 277px;
+    background-size: 100%;
+    background-position: 0 -100;
   }
   .introduce {
     margin-top: 0px;
@@ -468,7 +472,7 @@ img {
 
 @media (max-width: 568px) {
   .home-banner {
-    background-position: 0px -80px;
+    background-position: 0 0;
   }
   .home-items li {
     width: 70%;
@@ -767,7 +771,11 @@ a {
   display: flex;
 }
 
-.topbar .menu .shop-car img {
+.topbar .shop-car {
+  margin-top: 10px;
+}
+
+.topbar .shop-car img {
   width: 24px;
   margin-left: 60px;
 }
@@ -827,10 +835,13 @@ a {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .topbar .shop-car {
+    margin-top: 0px;
+  }
   .topbar .shop-car img {
     margin-left: 0px !important;
     width: 40px;
-    margin-top: 20px !important;
+    margin-top: 10px !important;
   }
   .active {
     display: block !important;
@@ -1491,15 +1502,17 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-a;
-      -ms-flex-pack: space-a;
-          justify-content: space-a;
 }
 
 .transport-address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.transport-address select {
+  text-indent: 10px;
+  color: #8da291;
 }
 
 .surname,
@@ -1743,6 +1756,439 @@ a {
     width: 100%;
     height: 588px;
     background-position: -100 0;
+  }
+}
+
+.PayInformation {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 66px;
+}
+
+.PayInformation-content {
+  padding: 30px 40px 0px 40px;
+}
+
+.PayInformation-detail {
+  width: 460px;
+  height: 577px;
+  background-color: #3f5d45;
+  margin-bottom: 65px;
+}
+
+.PayInformation-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.PayInformation-date select {
+  text-indent: 10px;
+  color: #8da291;
+}
+
+.credit-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.credit-name input {
+  width: 49%;
+}
+
+.PayInformation-month,
+.PayInformation-year,
+.credit-password {
+  width: 50%;
+}
+
+.PayInformation-month input,
+.PayInformation-year input,
+.credit-password input {
+  width: 100%;
+}
+
+.PayInformation-month {
+  margin-right: 4px;
+}
+
+.PayInformation-year {
+  margin-left: 4px;
+}
+
+.PayInformation-phone input {
+  width: 100%;
+}
+
+.PayInformation-data input {
+  height: 56px;
+  background-color: #eaf0ed;
+  border: none;
+  margin-bottom: 16px;
+  text-indent: 10px;
+}
+
+.PayInformation-data select {
+  height: 56px;
+  background-color: #eaf0ed;
+  border: none;
+  margin-bottom: 16px;
+}
+
+.PayInformation-data h3 {
+  color: #eaf0ed;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.PayInformation-orderList {
+  width: 300px;
+  margin-left: 20px;
+}
+
+.PayInformation-delver h4 {
+  font-size: 36px;
+  color: #eaf0ed;
+  margin-bottom: 30px;
+}
+
+.PayInformation-next a {
+  color: #3f5d45;
+  display: block;
+  background-color: #ffe180;
+  font-size: 24px;
+  text-align: center;
+  line-height: 65px;
+  margin-top: 17px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.PayInformation-next a a {
+  color: #3f5d45;
+}
+
+.PayInformation-next a:hover {
+  background-color: #eaf0ed;
+}
+
+.PayInformation-countlist {
+  margin-bottom: 20px;
+  border: #eaf0ed 2px solid;
+}
+
+.PayInformation-countlist p {
+  color: #8da291;
+}
+
+.PayInformation-countlist h2 {
+  padding-top: 16px;
+  margin-top: -1px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  font-size: 24px;
+  text-align: center;
+  color: #8da291;
+  background-color: #eaf0ed;
+  border-bottom: #eaf0ed 1px solid;
+}
+
+.PayInformation-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #eaf0ed;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.PayInformation-count h4 {
+  color: #8da291;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.PayInformation-shoppingList {
+  border: #eaf0ed 2px solid;
+}
+
+.PayInformation-shoppingList h2 {
+  padding-top: 16px;
+  margin-top: -1px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  font-size: 24px;
+  text-align: center;
+  color: #8da291;
+  background-color: #eaf0ed;
+  border-bottom: #eaf0ed 1px solid;
+}
+
+.PayInformation-shoppingList ul li {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #8da291;
+  margin-bottom: 20px;
+}
+
+.PayInformation-shoppingList ul li p {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.PayInformation-shoppingList ul li h3 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.PayInformation-shoppingList ul li img {
+  margin-right: 20px;
+  width: 120px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .PayInformation-orderlist {
+    display: none;
+  }
+  .PayInformation {
+    padding: 0px;
+  }
+  .PayInformation-detail {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+}
+
+.receipt {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 66px;
+  margin-bottom: 60px;
+}
+
+.receipt-content {
+  padding: 30px 40px 0px 40px;
+}
+
+.receipt-content p {
+  color: #EAF0ED;
+  margin-bottom: 8px;
+}
+
+.receipt-content input {
+  margin-bottom: 16px;
+  width: 100%;
+  height: 56px;
+  text-indent: 10px;
+}
+
+.receipt-detail {
+  width: 460px;
+  height: 491px;
+  background-color: #3f5d45;
+  margin-bottom: 65px;
+}
+
+.PayInformation-credit {
+  position: relative;
+}
+
+.PayInformation-credit input {
+  width: 100%;
+}
+
+.credit-img {
+  position: absolute;
+  width: 24px;
+  top: 44px;
+  right: 16px;
+}
+
+.receipt-orderList {
+  width: 300px;
+  margin-left: 20px;
+}
+
+.receipt-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 44px;
+}
+
+.receipt-type a {
+  text-align: center;
+  line-height: 56px;
+  border: #EAF0ED 1px solid;
+  color: #EAF0ED;
+  background-color: #3f5d45;
+  display: block;
+  width: 190px;
+  height: 56px;
+}
+
+.receipt-type a:hover {
+  background-color: #EAF0ED;
+  color: #3f5d45;
+}
+
+.receipt-active {
+  color: #3f5d45 !important;
+  background-color: #EAF0ED !important;
+}
+
+.receipt-title h4 {
+  font-size: 36px;
+  color: #eaf0ed;
+  margin-bottom: 30px;
+}
+
+.receipt-next a {
+  color: #3f5d45;
+  display: block;
+  background-color: #ffe180;
+  font-size: 24px;
+  text-align: center;
+  line-height: 65px;
+  margin-top: 38px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.receipt-next a a {
+  color: #3f5d45;
+}
+
+.receipt-next a:hover {
+  background-color: #eaf0ed;
+}
+
+.receipt-countlist {
+  margin-bottom: 20px;
+  border: #eaf0ed 2px solid;
+}
+
+.receipt-countlist p {
+  color: #8da291;
+}
+
+.receipt-countlist h2 {
+  padding-top: 16px;
+  margin-top: -1px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  font-size: 24px;
+  text-align: center;
+  color: #8da291;
+  background-color: #eaf0ed;
+  border-bottom: #eaf0ed 1px solid;
+}
+
+.receipt-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #eaf0ed;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.receipt-count h4 {
+  color: #8da291;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.receipt-shoppingList {
+  border: #eaf0ed 2px solid;
+}
+
+.receipt-shoppingList h2 {
+  padding-top: 16px;
+  margin-top: -1px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  font-size: 24px;
+  text-align: center;
+  color: #8da291;
+  background-color: #eaf0ed;
+  border-bottom: #eaf0ed 1px solid;
+}
+
+.receipt-shoppingList ul li {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #8da291;
+  margin-bottom: 20px;
+}
+
+.receipt-shoppingList ul li p {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.receipt-shoppingList ul li h3 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.receipt-shoppingList ul li img {
+  margin-right: 20px;
+  width: 120px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .receipt-orderlist {
+    display: none;
+  }
+  .receipt {
+    padding: 0px;
+  }
+  .receipt-detail {
+    width: 100%;
+    margin-bottom: 0px;
   }
 }
 /*# sourceMappingURL=all.css.map */

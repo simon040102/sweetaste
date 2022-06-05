@@ -42,13 +42,14 @@ a {
   }
   .menu {
     display: flex;
-    .shop-car {
+  }
+  .shop-car {
+      margin-top: 10px;
       img {
         width: 24px;
         margin-left: 60px;
       }
     }
-  }
   ul {
     display: flex;
 
@@ -97,10 +98,11 @@ a {
     padding-left: 20px;
     padding-right: 20px;
     .shop-car {
+      margin-top: 0px;
       img {
         margin-left: 0px !important;
         width: 40px ;
-        margin-top: 20px !important;
+        margin-top: 10px !important;
       }
     }
   }
