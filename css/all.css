@@ -1032,6 +1032,12 @@ a {
   color: #3f5d45;
 }
 
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (max-width: 768px) {
   .mail {
     display: block;
@@ -2145,10 +2151,11 @@ a {
 
 .receipt-content {
   padding: 30px 40px 0px 40px;
+  margin-bottom: 66px;
 }
 
 .receipt-content p {
-  color: #EAF0ED;
+  color: #eaf0ed;
   margin-bottom: 8px;
 }
 
@@ -2159,9 +2166,49 @@ a {
   text-indent: 10px;
 }
 
+.d-block {
+  display: block !important;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.receipt-address {
+  display: none;
+}
+
+.receipt-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.receipt-input select {
+  width: 50%;
+  margin-bottom: 8px;
+  text-indent: 10px;
+  height: 56px;
+  color: #8da291;
+}
+
+.same-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.same-address p {
+  margin-top: 3px;
+  color: #eaf0ed;
+}
+
 .receipt-detail {
   width: 443px;
-  height: 491px;
+  position: relative;
   background-color: #3f5d45;
   margin-bottom: 65px;
 }
@@ -2230,8 +2277,8 @@ a {
 .receipt-type a {
   text-align: center;
   line-height: 56px;
-  border: #EAF0ED 1px solid;
-  color: #EAF0ED;
+  border: #eaf0ed 1px solid;
+  color: #eaf0ed;
   background-color: #3f5d45;
   display: block;
   width: 190px;
@@ -2239,19 +2286,25 @@ a {
 }
 
 .receipt-type a:hover {
-  background-color: #EAF0ED;
+  background-color: #eaf0ed;
   color: #3f5d45;
 }
 
 .receipt-active {
   color: #3f5d45 !important;
-  background-color: #EAF0ED !important;
+  background-color: #eaf0ed !important;
 }
 
 .receipt-title h4 {
   font-size: 36px;
   color: #eaf0ed;
   margin-bottom: 30px;
+}
+
+.receipt-next {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .receipt-next a {
@@ -2261,7 +2314,7 @@ a {
   font-size: 24px;
   text-align: center;
   line-height: 65px;
-  margin-top: 38px;
+  margin-top: 20x;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -2369,7 +2422,8 @@ a {
     display: none;
   }
   .receipt {
-    padding: 0px;
+    padding: 0;
+    margin-bottom: 0px;
   }
   .receipt-detail {
     width: 100%;
@@ -2377,6 +2431,12 @@ a {
   }
   .receipt-type a {
     width: 50%;
+  }
+  .receipt-next {
+    margin-top: 100px;
+  }
+  .receipt-content {
+    margin-bottom: 100px;
   }
 }
 /*# sourceMappingURL=all.css.map */

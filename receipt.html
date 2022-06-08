@@ -60,11 +60,28 @@
            </ul>
          </div>
          <div class="receipt-type">
-            <a href="#"><h3>電子發票</h3></a>
-            <a href="#"><h3>郵寄發票</h3></a>
+            <a href="#" class="mail-receipt receipt-active"><h3>電子發票</h3></a>
+            <a href="#" class="send-receipt"><h3>郵寄發票</h3></a>
          </div>
+         <div class="receipt-mail ">
          <p>電子郵件信箱</p>
          <input type="mail" placeholder="example@email.com">
+         </div>
+          <div class="receipt-address">
+            <div class="same-address">
+         <p>地址</p>
+         <div class="d-flex"><input type="checkbox" value=""style="width:16px;height: 16px;"><p> 同運送地址</p></div>
+         </div>
+           <div class="receipt-input">
+             <select class="receipt-country" name="country" id="">
+               <option value="高雄市">高雄市</option>
+             </select>
+             <select class="receipt-area" name="area" id="">
+               <option value="新興區">新興區</option>
+             </select>
+           </div>
+            <input class="address" type="text" placeholder="幸褔路520號">
+           </div> 
          <p>統一編號(選填)</p>
          <input type="text" placeholder="12345678">
          </div>
