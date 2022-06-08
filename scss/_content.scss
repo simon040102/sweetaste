@@ -113,13 +113,14 @@ a {
     left: 0;
     bottom: -160px;
     width: 100%;
-    background-color: rgba(63, 93, 69, 0.8);
+    background-color:#eaf0edb7;
     border-bottom: #eaf0ed solid 2px;
     font-size: 30px;
     text-align: center;
     transition: 1s;
+    z-index: 999;
     a {
-      color: #eaf0ed !important;
+      color: #3f5d45 !important;
       padding-bottom: 0px !important;
       display: block;
       &:hover {
