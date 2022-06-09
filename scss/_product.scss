@@ -27,7 +27,9 @@
       border: 1px solid #EAF0ED;
     }
   }
-
+.fas{
+  color: red !important;
+}
 .kind {
   width: 100%;
   text-align: center;
@@ -48,7 +50,9 @@
   }
 
 }
-
+.fas{
+  color: red !important;
+}
 .items {
   max-width: 800px;
   display: flex;
@@ -86,7 +90,11 @@
     top: 20px;
     right: 20px;
     font-size: 20px;
-  }
+      a{
+        color: #3f5d45;
+      }
+    }
+  
 
   .price {
     .green{
